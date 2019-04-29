@@ -29,8 +29,7 @@ public class NocPocTestIT extends TestNGCitrusTestRunner {
             .client(nocEndpoint)
             .receive()
             .response(HttpStatus.OK)
-            .messageType(MessageType.JSON)
-            .jsonPath("boolean:$._links", false));
+            .messageType(MessageType.JSON));
   }
 
 }
